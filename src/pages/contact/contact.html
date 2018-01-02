@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title align="center">
+      Horizont Calculator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <!--<ion-list>
+    <ion-list-header><h2>Follow us</h2></ion-list-header>
+    <ion-item>
+      <ion-icon name="logo-facebook" item-start></ion-icon>
+      <a style="text-decoration:none" href="https://www.facebook.com/jpfrancasilva">João Paulo França</a>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-facebook" item-start></ion-icon>
+      <a style="text-decoration:none" href="#">Berg</a>
+    </ion-item>
+
+    <br><br>
+
+    <ion-item>
+      <ion-icon name="logo-linkedin" item-start></ion-icon>
+      <a style="text-decoration:none" href="https://www.linkedin.com/in/joão-paulo-frança-550385127/">João Paulo França</a>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-linkedin" item-start></ion-icon>
+      <a style="text-decoration:none" href="#">Berg</a>
+    </ion-item>
+
+    <ion-item></ion-item>
+ </ion-list> -->
+
+ <br>
+  <h3 align="center">{{(calc(hight, medida))}}</h3>
+ <br>
+
+  <ion-list radio-group>
+
+  <ion-item>
+    <ion-label>Meters</ion-label>
+    <ion-radio value="km" (click)="medida = 'm' "></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Feet</ion-label>
+    <ion-radio value="ml" (click)="medida = 'f' "></ion-radio>
+  </ion-item>
+</ion-list>
+
+  <ion-list>
+  <ion-item>
+    <ion-label>Eye Hight</ion-label>
+    <ion-input type="text" id="distance" name="distance" (input)="hight = $event.target.value" required></ion-input>
+  </ion-item>
+  </ion-list>
+</ion-content>
