@@ -43,7 +43,7 @@ export class ContactPage {
   				return "Enter a valid number";
   			}
   		}else{
-  			return "choose a metric";
+  			return "Choose a metric";
   		}
   }
 

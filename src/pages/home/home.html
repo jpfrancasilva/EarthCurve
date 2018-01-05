@@ -1,32 +1,31 @@
 <ion-header>
   <ion-navbar>
-    <ion-title align="center">curvature calculator</ion-title>
+    <ion-title align="center">Curvature Calculator</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
- <!-- <h2 align="center">Welcome to Hearth decline!</h2> -->
+
 	<ion-list radio-group>
   <ion-item>
-    <ion-label>kilometro (KM)</ion-label>
+    <ion-label>Kilometer (KM)</ion-label>
     <ion-radio value="km" (click)="medida = 'km' "></ion-radio>
   </ion-item>
 
   <ion-item>
-    <ion-label>miles (M)</ion-label>
+    <ion-label>Miles (M)</ion-label>
     <ion-radio value="ml" (click)="medida = 'mi' "></ion-radio>
   </ion-item>
 </ion-list>
 
 	<ion-list>
-  <ion-item>
-    <ion-label>distance</ion-label>
-    <ion-input type="text" id="distance" name="distance" (input)="distance = $event.target.value" required></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label>Distance</ion-label>
+      <ion-input type="tel" id="distance" name="distance" (input)="distance = $event.target.value" required></ion-input>
+    </ion-item>
 	</ion-list>
 	<br>
 	<h3 align="center">{{(calc(distance, medida))}}</h3>
 
 	<!--<button ion-button full color="secondary" type="submit" ng-click="calc(obj)">Calcular</button> -->
-
 </ion-content>
