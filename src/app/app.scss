@@ -24,6 +24,18 @@
 	color: teal !important;
 }
 
-.tabs-md .tabbar{
+.tabs-md .tabbar {
 	position: fixed !important;
+}
+
+.radio-md .radio-inner {
+	background-color: teal !important;
+}
+
+.radio-md .radio-checked {
+	border-color: teal !important;
+}
+
+.item-radio-checked.item-md ion-label{
+	color: teal;
 }
