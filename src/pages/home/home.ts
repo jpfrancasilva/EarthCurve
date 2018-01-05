@@ -24,7 +24,7 @@ export class HomePage {
   				return arredonda + " meters";
   			}
   			else{
-  				return "Enter a valid number";
+  				return "enter a valid number";
   			}
   		}
   		else if(medida == "mi"){
@@ -39,10 +39,10 @@ export class HomePage {
   				return arredonda + " feet";
   			}
   			else{
-  				return "Enter a valid number";
+  				return "enter a valid number";
   			}
   		}else{
-  			return "Choose a metric";
+  			return "choose a metric";
   		}
   }
 

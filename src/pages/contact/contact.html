@@ -8,22 +8,22 @@
 
   <ion-list radio-group>
   <ion-item>
-    <ion-label>Meters</ion-label>
+    <ion-label>meters</ion-label>
     <ion-radio value="km" (click)="medida = 'm' "></ion-radio>
   </ion-item>
 
   <ion-item>
-    <ion-label>Feet</ion-label>
+    <ion-label>feet</ion-label>
     <ion-radio value="ml" (click)="medida = 'f' "></ion-radio>
   </ion-item>
 </ion-list>
 
   <ion-list>
   <ion-item>
-    <ion-label>Eye Hight</ion-label>
+    <ion-label>eye hight</ion-label>
     <ion-input type="tel" id="distance" name="distance" (input)="hight = $event.target.value" required></ion-input>
   </ion-item>
   </ion-list>
   <br>
-  <h3 align="center">{{(calc(hight, medida))}}</h3>
+  <h4 align="center">{{(calc(hight, medida))}}</h4>
 </ion-content>

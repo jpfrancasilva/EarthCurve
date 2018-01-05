@@ -63,7 +63,7 @@ var TabsPage = (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/bergpb/angular_projects/HearthDecline/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Curvature" tabIcon="globe"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Horizont" tabIcon="boat"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/bergpb/angular_projects/HearthDecline/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="curvature" tabIcon="globe"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="horizont" tabIcon="boat"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="about" tabIcon="information-circle"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -105,7 +105,7 @@ var AboutPage = (function () {
     };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/home/bergpb/angular_projects/HearthDecline/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title align="center">\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<span><strong>Calculator Curvature:</strong></span>\n	<p align="center">\n		<img src="assets/imgs/CurvatureCalc.jpeg" width="80%" #imgCurvature (click)="presentImage(imgCurvature)" />\n	</p>\n	<br><br>\n	<span><strong>Calculator Horizont Line:</strong></span>\n	<p align="center">\n		<img src="assets/imgs/HorizontCalc.jpg" width="80%" #imgHorizont (click)="presentImage(imgHorizont)" />\n	</p>\n</ion-content>\n'/*ion-inline-end:"/home/bergpb/angular_projects/HearthDecline/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\pages\about\about.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title align="center">\n\n      about\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n	<span><strong>calculator curvature:</strong></span>\n\n	<p align="center">\n\n		<img src="assets/imgs/CurvatureCalc.jpeg" width="80%" #imgCurvature (click)="presentImage(imgCurvature)" />\n\n	</p>\n\n	<br><br>\n\n	<span><strong>calculator horizont Line:</strong></span>\n\n	<p align="center">\n\n		<img src="assets/imgs/HorizontCalc.jpg" width="80%" #imgHorizont (click)="presentImage(imgHorizont)" />\n\n	</p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\pages\about\about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_img_viewer__["a" /* ImageViewerController */]])
     ], AboutPage);
@@ -138,7 +138,6 @@ var ContactPage = (function () {
     function ContactPage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    //D=Vh²+2hR
     ContactPage.prototype.calc = function (hight, medida) {
         if (medida == "m") {
             if (hight >= 0) {
@@ -147,7 +146,7 @@ var ContactPage = (function () {
                 return arredonda + " km";
             }
             else {
-                return "Enter a valid number";
+                return "enter a valid number";
             }
         }
         else if (medida == "f") {
@@ -159,20 +158,21 @@ var ContactPage = (function () {
                 return arredonda + " Miles";
             }
             else {
-                return "Enter a valid number";
+                return "enter a valid number";
             }
         }
         else {
-            return "Choose a metric";
+            return "choose a metric";
         }
     };
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/home/bergpb/angular_projects/HearthDecline/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title align="center">Horizont Calculator</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list radio-group>\n  <ion-item>\n    <ion-label>Meters</ion-label>\n    <ion-radio value="km" (click)="medida = \'m\' "></ion-radio>\n  </ion-item>\n\n  <ion-item>\n    <ion-label>Feet</ion-label>\n    <ion-radio value="ml" (click)="medida = \'f\' "></ion-radio>\n  </ion-item>\n</ion-list>\n\n  <ion-list>\n  <ion-item>\n    <ion-label>Eye Hight</ion-label>\n    <ion-input type="tel" id="distance" name="distance" (input)="hight = $event.target.value" required></ion-input>\n  </ion-item>\n  </ion-list>\n  <br>\n  <h3 align="center">{{(calc(hight, medida))}}</h3>\n</ion-content>\n'/*ion-inline-end:"/home/bergpb/angular_projects/HearthDecline/src/pages/contact/contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title align="center">horizont calculator</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <ion-list radio-group>\n\n  <ion-item>\n\n    <ion-label>meters</ion-label>\n\n    <ion-radio value="km" (click)="medida = \'m\' "></ion-radio>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label>feet</ion-label>\n\n    <ion-radio value="ml" (click)="medida = \'f\' "></ion-radio>\n\n  </ion-item>\n\n</ion-list>\n\n\n\n  <ion-list>\n\n  <ion-item>\n\n    <ion-label>eye hight</ion-label>\n\n    <ion-input type="tel" id="distance" name="distance" (input)="hight = $event.target.value" required></ion-input>\n\n  </ion-item>\n\n  </ion-list>\n\n  <br>\n\n  <h4 align="center">{{(calc(hight, medida))}}</h4>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\pages\contact\contact.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */]) === "function" && _a || Object])
     ], ContactPage);
     return ContactPage;
+    var _a;
 }());
 
 //# sourceMappingURL=contact.js.map
@@ -210,7 +210,7 @@ var HomePage = (function () {
                 return arredonda + " meters";
             }
             else {
-                return "Enter a valid number";
+                return "enter a valid number";
             }
         }
         else if (medida == "mi") {
@@ -223,20 +223,21 @@ var HomePage = (function () {
                 return arredonda + " feet";
             }
             else {
-                return "Enter a valid number";
+                return "enter a valid number";
             }
         }
         else {
-            return "Choose a metric";
+            return "choose a metric";
         }
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/bergpb/angular_projects/HearthDecline/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title align="center">Curvature Calculator</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n	<ion-list radio-group>\n  <ion-item>\n    <ion-label>Kilometer (KM)</ion-label>\n    <ion-radio value="km" (click)="medida = \'km\' "></ion-radio>\n  </ion-item>\n\n  <ion-item>\n    <ion-label>Miles (M)</ion-label>\n    <ion-radio value="ml" (click)="medida = \'mi\' "></ion-radio>\n  </ion-item>\n</ion-list>\n\n	<ion-list>\n    <ion-item>\n      <ion-label>Distance</ion-label>\n      <ion-input type="tel" id="distance" name="distance" (input)="distance = $event.target.value" required></ion-input>\n    </ion-item>\n	</ion-list>\n	<br>\n	<h3 align="center">{{(calc(distance, medida))}}</h3>\n\n	<!--<button ion-button full color="secondary" type="submit" ng-click="calc(obj)">Calcular</button> -->\n</ion-content>\n'/*ion-inline-end:"/home/bergpb/angular_projects/HearthDecline/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title align="center">curvature calculator</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n	<ion-list radio-group>\n\n  <ion-item>\n\n    <ion-label>kilometer</ion-label>\n\n    <ion-radio value="km" (click)="medida = \'km\' "></ion-radio>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label>miles</ion-label>\n\n    <ion-radio value="ml" (click)="medida = \'mi\' "></ion-radio>\n\n  </ion-item>\n\n</ion-list>\n\n\n\n	<ion-list>\n\n    <ion-item>\n\n      <ion-label>distance</ion-label>\n\n      <ion-input type="tel" id="distance" name="distance" (input)="distance = $event.target.value" required></ion-input>\n\n    </ion-item>\n\n	</ion-list>\n\n	<br>\n\n	<h4 align="center">{{(calc(distance, medida))}}</h4>\n\n\n\n	<!--<button ion-button full color="secondary" type="submit" ng-click="calc(obj)">Calcular</button> -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */]) === "function" && _a || Object])
     ], HomePage);
     return HomePage;
+    var _a;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -366,7 +367,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/bergpb/angular_projects/HearthDecline/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/bergpb/angular_projects/HearthDecline/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\3IT Consultoria\Documents\documentos_JP\HearthDecline\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

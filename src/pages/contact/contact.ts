@@ -14,8 +14,6 @@ export class ContactPage {
 
   medida: string;
 
-  //D=Vh²+2hR
-
   public calc(hight:any, medida:any){
 
   		if(medida == "m"){
@@ -26,7 +24,7 @@ export class ContactPage {
   				return arredonda + " km";
   			}
   			else{
-  				return "Enter a valid number";
+  				return "enter a valid number";
   			}
   		}
   		else if(medida == "f"){
@@ -40,10 +38,10 @@ export class ContactPage {
   				return arredonda + " Miles";
   			}
   			else{
-  				return "Enter a valid number";
+  				return "enter a valid number";
   			}
   		}else{
-  			return "Choose a metric";
+  			return "choose a metric";
   		}
   }
 
