@@ -25748,6 +25748,13 @@ image-viewer.ion-page img {
   margin: 0 auto;
 }
 
+.list-md .item-input.item-input-has-focus:last-child,
+.list-md .item-input.input-has-focus:last-child {
+  border-bottom-color: teal !important;
+  -webkit-box-shadow: inset 0 -1px 0 0 teal !important;
+  box-shadow: inset 0 -1px 0 0 teal !important;
+}
+
 .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
   color: teal !important;
 }
